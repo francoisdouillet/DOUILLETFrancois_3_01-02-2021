@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(201, 201, 201);
+    margin: 0 auto;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    font-family: 'roboto';
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(../font/roboto.ttf);
+}
+
+
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+.menuobject {
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0.75rem;
+    display: flex;
+    overflow: hidden;
+    width: 90%;
+    cursor: pointer;
+    &__texte {
+        flex: 1;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    &__title {
+        margin: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    &__description {
+        margin: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    &__price {
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-left: 0.5rem;
+    }
+    &__check {
+    background-color: $color-tertiary;
+    margin: -1rem -5rem -1rem 1rem;
+    width: 4rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition-duration: 500ms;
+    }
+    &:hover &__check {
+        margin-right: -1rem;
+      }
+
+    &__icon {
+        height: 1.6rem;
+        width: 1.6rem;
+        background-color: white;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius: 1rem;
+        transition: 650ms;
+      }
+    
+      &:hover &__icon {
+        transform: rotate(360deg);
+      }
+    
+      &__icon--color {
+        color: $color-tertiary;
+      }
+}

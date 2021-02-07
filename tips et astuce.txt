@@ -2,3 +2,19 @@ pour le coeur qui s'anime soit 2 svg l'un par dessus l'autre
 
 
 https://pqina.nl/blog/animating-width-and-height-without-the-squish-effect/ 
+
+utiliser scaleX et transform origin (overflow hidden et translate sinon) et display inline block a tester
+
+https://css-tricks.com/change-color-of-svg-on-hover/
+
+Voici un source code pour un coeur en html pur :
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" height="315" width="342">
+    <defs>
+      <g id="heart">
+      <path d="M0 200 v-200 h200      a100,100 90 0,1 0,200     a100,100 90 0,1 -200,0     z"/>
+     </g>
+    </defs>
+     <use xlink:href="#heart" class="outline " fill="red" transform="rotate(225,150,121)"/>
+   </svg>
+
+https://ohmyfood.mathisbarre.com/le-delice-des-sens.html

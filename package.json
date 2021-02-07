@@ -1,0 +1,19 @@
+{
+  "name": "maquettes-ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/animation.scss:./css/animation.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francoisdouillet/ohmyfoodp3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francoisdouillet/ohmyfoodp3/issues"
+  },
+  "homepage": "https://github.com/francoisdouillet/ohmyfoodp3#readme"
+}

@@ -1,0 +1,78 @@
+body {
+  background-color: #c9c9c9;
+  margin: 0 auto;
+  list-style: none;
+  text-decoration: none;
+  width: 100%;
+  font-family: "roboto";
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(../font/roboto.ttf);
+}
+.menuobject {
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.75rem;
+  display: flex;
+  overflow: hidden;
+  width: 90%;
+  cursor: pointer;
+}
+.menuobject__texte {
+  flex: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menuobject__title {
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menuobject__description {
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menuobject__price {
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-left: 0.5rem;
+}
+.menuobject__check {
+  background-color: #99E2D0;
+  margin: -1rem -5rem -1rem 1rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 500ms;
+}
+.menuobject:hover .menuobject__check {
+  margin-right: -1rem;
+}
+.menuobject__icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  transition: 650ms;
+}
+.menuobject:hover .menuobject__icon {
+  transform: rotate(360deg);
+}
+.menuobject__icon--color {
+  color: #99E2D0;
+}
+
+/*# sourceMappingURL=animation.css.map */
