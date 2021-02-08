@@ -7,12 +7,19 @@ body {
     font-family: 'roboto';
 }
 
+h1, h2, h3 {
+    font-family: 'Shrikhand';
+}
+
 @font-face {
     font-family: 'roboto';
     src: url(../font/roboto.ttf);
 }
 
-
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(../font/Shrikhand.ttf);
+}
 
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
@@ -83,4 +90,107 @@ $color-tertiary: #99E2D0;
       &__icon--color {
         color: $color-tertiary;
       }
+}
+
+.loader {
+    position: absolute;
+    display: flex;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    animation: loader1 0.05s 3s both;
+    z-index: 10000;
+    & p {
+        font-family: 'Shrikhand';
+        font-size: 4rem;
+    }
+    &__1 {
+        animation: loader 700ms ease-in-out 200ms infinite alternate both;
+    }
+    &__2 {
+        animation: loader 700ms ease-in-out 300ms infinite alternate both;
+    }
+    &__3 {
+        animation: loader 700ms ease-in-out 400ms infinite alternate both;
+    }
+    &__4 {
+        animation: loader 700ms ease-in-out 500ms infinite alternate both;
+    }
+    &__5 {
+        animation: loader 700ms ease-in-out 600ms infinite alternate both;
+    }
+    &__6 {
+        animation: loader 700ms ease-in-out 700ms infinite alternate both;
+    }
+    &__7 {
+        animation: loader 700ms ease-in-out 800ms infinite alternate both;
+    }
+    &__8 {
+        animation: loader 700ms ease-in-out 900ms infinite alternate both;
+    }
+    &__barre {
+        width: 85%;
+        height: 8px;
+        background-color: black;
+        position: absolute;
+        bottom: 40%;
+        animation: barre 3s;
+        transform: scaleX(0);
+    }
+}
+
+@keyframes barre {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes loader {
+    0% {
+        transform: translateY(25px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes loader1 {
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  } 
+
+@keyframes deplacement { 
+    from{ 
+        opacity: 0; 
+        transform: translateY(60px); 
+    } 
+    to { 
+        opacity: 1; transform: 
+        translateY(0);
+    }
+}
+
+  .deplacement {
+      animation: deplacement 1s 3s backwards;
+  }
+
+  .deplacement1 {
+    animation: deplacement 1s 3.5s backwards;
+}
+
+.deplacement2 {
+    animation: deplacement 1s 4s backwards;
 }
