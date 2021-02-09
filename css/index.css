@@ -212,8 +212,53 @@
   transition: 500ms;
 }
 
+.nav {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #f6f6f6;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  width: 80%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+.nav__list--number {
+  background-color: #9356dc;
+  position: absolute;
+  left: -1rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.nav__list--icone {
+  margin-right: 2rem;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  color: #7e7e7e;
+}
+.nav__list--texte {
+  font-weight: bold;
+}
+.nav__list:hover {
+  background-color: #f5edff;
+}
+.nav__list:hover .nav__list--icone {
+  color: #9356dc;
+}
+
 body {
-  margin: 0 auto;
+  margin: 0;
   font-family: "roboto";
 }
 

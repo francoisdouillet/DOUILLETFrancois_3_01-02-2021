@@ -53,3 +53,48 @@
         }
     }
 }
+
+.nav {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__list {
+            display: flex;
+            align-items: center;
+            position: relative;
+            background-color: $color-background;
+            box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+            padding: 1.5rem;
+            width: 80%;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            &--number {
+                background-color: $color-primary;
+                position: absolute;
+                left: -1rem;
+                width: 1.8rem;
+                height: 1.8rem;
+                border-radius: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+            &--icone {
+                margin-right: 2rem;
+                margin-left: 1rem;
+                font-size: 1.3rem;
+                color: #7e7e7e;
+            }
+            &--texte {
+                font-weight: bold;
+            }
+            &:hover {
+                background-color: #f5edff;
+            }
+            &:hover &--icone {
+                color: #9356dc;
+            }
+        }
+}
