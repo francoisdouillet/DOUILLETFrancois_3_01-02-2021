@@ -19,11 +19,8 @@ Voici un source code pour un coeur en html pur :
 
 https://ohmyfood.mathisbarre.com/le-delice-des-sens.html
 
-@keyframes deplacement{ 
-  from{ 
-     opacity: 0; 
-      transform: translateX(60px); 
-} to { 
-opacity: 1; transform: 
-translateX(0); }
-}
+essayer utiliser scale (regarder bouton j'aime twitter)
+
+https://www.youtube.com/watch?v=0cYdA4MBwhk
+
+split (découpage) clean le code, pas de répétition, commit regulier en capslock

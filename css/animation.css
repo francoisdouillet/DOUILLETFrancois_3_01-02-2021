@@ -1,9 +1,6 @@
 body {
   background-color: #c9c9c9;
   margin: 0 auto;
-  list-style: none;
-  text-decoration: none;
-  width: 100%;
   font-family: "roboto";
 }
 
@@ -22,7 +19,8 @@ h1, h2, h3 {
 .menuobject {
   background-color: white;
   padding: 1rem;
-  margin: 1rem 0;
+  margin: 0 auto;
+  margin-bottom: 1rem;
   border-radius: 0.75rem;
   display: flex;
   overflow: hidden;
@@ -123,8 +121,8 @@ h1, h2, h3 {
   animation: loader 700ms ease-in-out 900ms infinite alternate both;
 }
 .loader__barre {
-  width: 85%;
-  height: 8px;
+  width: 22rem;
+  height: 0.5rem;
   background-color: black;
   position: absolute;
   bottom: 40%;
@@ -142,13 +140,13 @@ h1, h2, h3 {
 }
 @keyframes loader {
   0% {
-    transform: translateY(25px);
+    transform: translateY(1rem);
   }
   50% {
     transform: translateY(0);
   }
   75% {
-    transform: translateY(10px);
+    transform: translateY(0.5rem);
   }
   100% {
     transform: translateY(0);
@@ -163,7 +161,7 @@ h1, h2, h3 {
 @keyframes deplacement {
   from {
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(4rem);
   }
   to {
     opacity: 1;
