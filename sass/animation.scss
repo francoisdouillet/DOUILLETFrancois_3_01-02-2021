@@ -1,28 +1,4 @@
-body {
-  background-color: rgb(201, 201, 201);
-  margin: 0 auto;
-  font-family: "roboto";
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Shrikhand";
-}
-
-@font-face {
-  font-family: "roboto";
-  src: url(../font/roboto.ttf);
-}
-
-@font-face {
-  font-family: "Shrikhand";
-  src: url(../font/Shrikhand.ttf);
-}
-
-$color-primary: #9356dc;
-$color-secondary: #ff79da;
-$color-tertiary: #99e2d0;
+@import "variable.scss";
 
 .menuobject {
   background-color: white;
@@ -31,26 +7,20 @@ $color-tertiary: #99e2d0;
   margin-bottom: 1rem;
   border-radius: 0.75rem;
   display: flex;
-  overflow: hidden;
   width: 90%;
   cursor: pointer;
+  overflow: hidden;
   &__texte {
     flex: 1;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-  }
-  &__title {
-    margin: 0;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  &__description {
-    margin: 0;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    &--margin {
+      margin: 0;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
   }
   &__price {
     font-weight: bold;
@@ -141,6 +111,20 @@ $color-tertiary: #99e2d0;
   }
 }
 
+
+
+.deplacement {
+  animation: deplacement 1s 3s backwards;
+}
+
+.deplacement1 {
+  animation: deplacement 1s 3.5s backwards;
+}
+
+.deplacement2 {
+  animation: deplacement 1s 4s backwards;
+}
+
 @keyframes barre {
   0% {
     transform: scaleX(0);
@@ -181,16 +165,4 @@ $color-tertiary: #99e2d0;
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.deplacement {
-  animation: deplacement 1s 3s backwards;
-}
-
-.deplacement1 {
-  animation: deplacement 1s 3.5s backwards;
-}
-
-.deplacement2 {
-  animation: deplacement 1s 4s backwards;
 }

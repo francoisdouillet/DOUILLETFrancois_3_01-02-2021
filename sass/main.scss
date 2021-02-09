@@ -1,0 +1,30 @@
+@import "animation.scss";
+@import "variable.scss";
+@import "index.scss";
+
+body {
+  margin: 0 auto;
+  font-family: "roboto";
+}
+
+h1 {
+  font-family: "Shrikhand";
+  margin: 0;
+}
+
+h2, h3, h4, p {
+  margin: 0;
+}
+
+
+
+@font-face {
+  font-family: "roboto";
+  src: url(../font/roboto.ttf);
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url(../font/Shrikhand.ttf);
+}
+
