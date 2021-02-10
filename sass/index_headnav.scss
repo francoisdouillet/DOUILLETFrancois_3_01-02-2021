@@ -41,7 +41,7 @@
             padding: 1rem;
             border-radius: 2rem;
             border: none;
-            background: linear-gradient($color-secondary, $color-primary);
+            background: $color-degrade;
             color: white;
             font-size: 1rem;
             margin-bottom: 2rem;
@@ -56,9 +56,16 @@
 
 .nav {
     margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    font-weight: bold;
+    &__titre {
+        margin-left: 1.2rem;
+        margin-bottom: 2rem;
+        font-size: 1.4rem;
+    }
+    & ul {
+        padding-left: 0.5rem;
+        margin-bottom: 4rem;
+    }
     &__list {
             display: flex;
             align-items: center;
@@ -66,8 +73,10 @@
             background-color: $color-background;
             box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
             padding: 1.5rem;
+            padding-right: 0;
             width: 80%;
             border-radius: 1rem;
+            margin: 0 auto;
             margin-bottom: 2rem;
             &--number {
                 background-color: $color-primary;
@@ -87,14 +96,11 @@
                 font-size: 1.3rem;
                 color: #7e7e7e;
             }
-            &--texte {
-                font-weight: bold;
-            }
             &:hover {
                 background-color: #f5edff;
             }
             &:hover &--icone {
-                color: #9356dc;
+                color: $color-primary;
             }
         }
 }
