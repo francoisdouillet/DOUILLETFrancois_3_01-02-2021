@@ -1,8 +1,9 @@
+
 @import "animation.scss";
-@import "variable.scss";
 @import "index_headnav.scss";
 @import "index_mainfooter.scss";
-
+@import "menupage.scss";
+@import "variable.scss";
 body {
   margin: 0;
   font-family: "roboto";
@@ -15,6 +16,11 @@ h1 {
 
 h2, h3, h4, p {
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 @font-face {
