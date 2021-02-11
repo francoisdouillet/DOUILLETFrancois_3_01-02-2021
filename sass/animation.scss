@@ -61,6 +61,9 @@
   &__icon--color {
     color: $color-tertiary;
   }
+  & p {
+    font-size: 0.95rem;
+  }
 }
 
 .loader {
@@ -115,37 +118,45 @@
 
 
 .deplacement {
-  animation: deplacement 1s 0.5s backwards;
+  animation: deplacement 0.7s 0.5s backwards;
 }
 
 .deplacement1 {
-  animation: deplacement 1s 1s backwards;
+  animation: deplacement 0.7s 1s backwards;
 }
 
 .deplacement2 {
-  animation: deplacement 1s 1.5s backwards;
+  animation: deplacement 0.7s 1.5s backwards;
 }
 .deplacement3 {
-  animation: deplacement 1s 2s backwards;
+  animation: deplacement 0.7s 2s backwards;
 }
 
 .deplacement4 {
-  animation: deplacement 1s 2.5s backwards;
+  animation: deplacement 0.7s 2.5s backwards;
 }
 
 .deplacement5 {
-  animation: deplacement 1s 3s backwards;
+  animation: deplacement 0.7s 3s backwards;
 }
 .deplacement6 {
-  animation: deplacement 1s 3.5s backwards;
+  animation: deplacement 0.7s 3.5s backwards;
 }
 
 .deplacement7 {
-  animation: deplacement 1s 4s backwards;
+  animation: deplacement 0.7s 4s backwards;
 }
 
 .deplacement8 {
-  animation: deplacement 1s 4.5s backwards;
+  animation: deplacement 0.7s 4.5s backwards;
+}
+
+.deplacement9 {
+  animation: deplacement 0.7s 5s backwards;
+}
+
+.deplacement10 {
+  animation: deplacement 0.7s 5.5s backwards;
 }
 
 @keyframes barre {
