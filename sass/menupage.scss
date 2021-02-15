@@ -26,14 +26,19 @@
     padding: 1rem;
     background-color: #f6f6f6;
     border-radius: 2.5rem 2.5rem 0 0;
+    &__display {
+        @include desktop {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
     &__header {
         display: flex;
         position: relative;
+        align-items: center;
+        font-size: 0.9rem;
     }
     &__heart {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
         &--icon {
             position: absolute;
             top: 0.8rem;
@@ -57,6 +62,8 @@
         margin-bottom: 4rem;
         &:hover {
             transform: scale(1.03);
+            opacity: 0.9;
+            box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.4);
             transition: 500ms;
         }
     }
@@ -65,6 +72,9 @@
 
 .articlemenu {
     margin-top: 1.5rem;
+    @include desktop {
+        width: 30%;
+    }
     &__title {
         &--title {
             font-size: 1.1rem;
