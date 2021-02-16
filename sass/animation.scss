@@ -79,6 +79,9 @@
   & p {
     font-family: "Shrikhand";
     font-size: 4rem;
+    @include mobile {
+      font-size: 3rem;
+    }
   }
   &__1 {
     animation: loader 700ms ease-in-out 200ms infinite alternate both;
@@ -112,51 +115,54 @@
     bottom: 40%;
     animation: barre 3s;
     transform: scaleX(0);
+    @include mobile {
+      width: 16rem;
+    }
   }
 }
 
 
 
 .deplacement {
-  animation: deplacement 0.7s 0.5s backwards;
+  animation: deplacement 0.3s 0.5s backwards;
 }
 
 .deplacement1 {
-  animation: deplacement 0.7s 1s backwards;
+  animation: deplacement 0.3s 0.8s backwards;
 }
 
 .deplacement2 {
-  animation: deplacement 0.7s 1.5s backwards;
+  animation: deplacement 0.3s 1.1s backwards;
 }
 .deplacement3 {
-  animation: deplacement 0.7s 2s backwards;
+  animation: deplacement 0.3s 1.4s backwards;
 }
 
 .deplacement4 {
-  animation: deplacement 0.7s 2.5s backwards;
+  animation: deplacement 0.3s 1.7s backwards;
 }
 
 .deplacement5 {
-  animation: deplacement 0.7s 3s backwards;
+  animation: deplacement 0.3s 2s backwards;
 }
 .deplacement6 {
-  animation: deplacement 0.7s 3.5s backwards;
+  animation: deplacement 0.3s 2.3s backwards;
 }
 
 .deplacement7 {
-  animation: deplacement 0.7s 4s backwards;
+  animation: deplacement 0.3s 2.6s backwards;
 }
 
 .deplacement8 {
-  animation: deplacement 0.7s 4.5s backwards;
+  animation: deplacement 0.3s 2.9s backwards;
 }
 
 .deplacement9 {
-  animation: deplacement 0.7s 5s backwards;
+  animation: deplacement 0.3s 3.2s backwards;
 }
 
 .deplacement10 {
-  animation: deplacement 0.7s 5.5s backwards;
+  animation: deplacement 0.3s 3.5s backwards;
 }
 
 @keyframes barre {

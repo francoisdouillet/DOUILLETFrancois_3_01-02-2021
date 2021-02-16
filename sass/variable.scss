@@ -11,3 +11,9 @@ $color-degrade: linear-gradient($color-secondary, $color-primary);
         @content;
     }
 }
+
+@mixin mobile {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
